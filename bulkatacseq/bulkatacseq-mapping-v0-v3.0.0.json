@@ -49,9 +49,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The source schema uses 'assay_category' to categorize the assay, while the target schema has 'dataset_type'. Although both represent types, 'dataset_type' is more focused on dataset output, making this a close match rather than exact."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",

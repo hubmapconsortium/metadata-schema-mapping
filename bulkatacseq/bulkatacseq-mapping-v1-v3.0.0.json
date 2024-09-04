@@ -13,9 +13,9 @@
   },
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The source field 'donor_id' relates to the HuBMAP Display ID of the donor, while 'parent_sample_id' refers to the identifier of the sample. These are conceptually related, but 'parent_sample_id' may not always reference the donor directly."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "tissue_id",
@@ -61,9 +61,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'assay_category' in the source schema lists general assay types, while 'dataset_type' in the target schema specifies the type of dataset being produced. These fields are related but not identical."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",
@@ -139,9 +139,9 @@
   },
   {
     "source": "library_construction_protocols_io_doi",
-    "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields describe protocols.io DOIs, though the target field is more general and not limited to construction protocols."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "library_creation_date",
