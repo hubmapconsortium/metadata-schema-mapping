@@ -1,0 +1,248 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No field in the target schema corresponds to the schema version information."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching description field found in the target schema."
+  },
+  {
+    "source": "donor_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source field 'donor_id' relates to the HuBMAP Display ID of the donor, while 'parent_sample_id' refers to the identifier of the sample. These are conceptually related, but 'parent_sample_id' may not always reference the donor directly."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'tissue_id' in the source schema directly correlates to the 'parent_sample_id' in the target schema, both representing the unique identifier of the sample."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for capturing the execution date and time of the assay in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the DOI for the protocols.io page related to the assay or preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match for the operator responsible for executing the assay in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the email of the operator in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for the principal investigator in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for the email of the principal investigator in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'assay_category' in the source schema lists general assay types, while 'dataset_type' in the target schema specifies the type of dataset being produced. These fields are related but not identical."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The source field 'assay_type' is directly comparable to the 'dataset_type' in the target schema, representing the specific assay executed."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the analyte class, such as DNA, measured in the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields are intended to specify whether a specific molecule is targeted for detection."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the vendor of the acquisition instrument used in the assay."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the acquisition instrument."
+  },
+  {
+    "source": "bulk_transposition_input_number_nuclei",
+    "target": "number_of_input_cells_or_nuclei",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "These fields both describe the number of nuclei or cells input into the assay."
+  },
+  {
+    "source": "bulk_atac_cell_isolation_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source field describes a specific protocols.io link for cell isolation, while the target field is more general but can include the same information."
+  },
+  {
+    "source": "is_technical_replicate",
+    "target": "is_technical_replicate",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the assay involves a technical replicate."
+  },
+  {
+    "source": "library_adapter_sequence",
+    "target": "library_adapter_sequence",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the adapter sequences used in the library preparation."
+  },
+  {
+    "source": "library_average_fragment_size",
+    "target": "library_average_fragment_size",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the average fragment size of the sequencing library."
+  },
+  {
+    "source": "library_concentration_value",
+    "target": "library_concentration_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the concentration value of the library submitted for sequencing."
+  },
+  {
+    "source": "library_concentration_unit",
+    "target": "library_concentration_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the unit of measurement for the library concentration value."
+  },
+  {
+    "source": "library_construction_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields describe protocols.io DOIs, though the target field is more general and not limited to construction protocols."
+  },
+  {
+    "source": "library_creation_date",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for library creation date in the target schema."
+  },
+  {
+    "source": "library_final_yield_value",
+    "target": "library_output_amount_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the final yield of the library after the last PCR amplification step."
+  },
+  {
+    "source": "library_final_yield_unit",
+    "target": "library_output_amount_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the unit of measurement for the final library yield."
+  },
+  {
+    "source": "library_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found for a unique library ID in the target schema."
+  },
+  {
+    "source": "library_layout",
+    "target": "library_layout",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the library was generated for single-end or paired-end sequencing."
+  },
+  {
+    "source": "library_pcr_cycles",
+    "target": "number_of_pcr_cycles_for_indexing",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'library_pcr_cycles' refers to the number of PCR cycles in the source schema, while 'number_of_pcr_cycles_for_indexing' refers to PCR cycles for indexing specifically."
+  },
+  {
+    "source": "library_preparation_kit",
+    "target": "library_preparation_kit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the reagent kit used for library preparation."
+  },
+  {
+    "source": "sample_quality_metric",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct equivalent for sample quality metrics in the target schema."
+  },
+  {
+    "source": "sequencing_phix_percent",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for PhiX percentage in the target schema."
+  },
+  {
+    "source": "sequencing_read_format",
+    "target": "sequencing_read_format",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify the number of sequencing cycles in each round of sequencing."
+  },
+  {
+    "source": "sequencing_read_percent_q30",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found for Q30 percentage in the target schema."
+  },
+  {
+    "source": "sequencing_reagent_kit",
+    "target": "sequencing_reagent_kit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify the reagent kit used for sequencing."
+  },
+  {
+    "source": "transposition_kit_number",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found for transposition kit number in the target schema."
+  },
+  {
+    "source": "transposition_method",
+    "target": "transposition_method",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the method or kit used for transposition."
+  },
+  {
+    "source": "transposition_transposase_source",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for transposase source in the target schema."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path of the file with ORCID IDs for dataset contributors."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the path to the file or directory containing raw or processed data."
+  }
+]
