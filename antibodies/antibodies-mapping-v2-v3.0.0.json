@@ -1,0 +1,68 @@
+[
+  {
+    "source": "version",
+    "target": "metadata_schema_id",
+    "matchingPredicate": "skos:narrowMatch",
+    "rationale": "The 'version' field in the source schema represents the version of the schema, whereas 'metadata_schema_id' in the target schema is a broader concept that includes both version and other information about the schema, such as its ID."
+  },
+  {
+    "source": "channel_id",
+    "target": "channel_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields, in the source and target schemas, represent the same concept, describing the structure of the channel ID depending on the assay type."
+  },
+  {
+    "source": "antibody_name",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found in the target schema for 'antibody_name'."
+  },
+  {
+    "source": "rr_id",
+    "target": "antibody_rrid",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept: a unique identifier from the Antibody Registry."
+  },
+  {
+    "source": "uniprot_accession_number",
+    "target": "uniprot_accession_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept: the unique identifier for proteins in the UniProt database."
+  },
+  {
+    "source": "lot_number",
+    "target": "lot_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept: the lot number specific to the vendor."
+  },
+  {
+    "source": "dilution",
+    "target": "dilution_factor",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source schema's 'dilution' field describes the ratio as a string (e.g., '1/200'), while the target schema uses 'dilution_factor', which is a numeric field describing the dilution factor (e.g., 200). They are closely related but use different formats."
+  },
+  {
+    "source": "concentration_value",
+    "target": "antibody_concentration_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the concentration value of the antibody preparation."
+  },
+  {
+    "source": "concentration_unit",
+    "target": "antibody_concentration_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the concentration units for the antibody preparation."
+  },
+  {
+    "source": "conjugated_cat_number",
+    "target": "conjugated_cat_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept: the catalog number for the conjugated antibody."
+  },
+  {
+    "source": "conjugated_tag",
+    "target": "conjugated_tag",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept: the name of the entity conjugated to the antibody."
+  }
+]

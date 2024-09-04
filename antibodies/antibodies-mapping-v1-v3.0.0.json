@@ -1,0 +1,56 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no corresponding field in the target schema for the 'version' field from the source schema."
+  },
+  {
+    "source": "channel_id",
+    "target": "channel_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both the source and target fields have the same name ('channel_id') and similar descriptions indicating the structure depends on assay type. This is an exact match."
+  },
+  {
+    "source": "antibody_name",
+    "target": "hgnc_symbol",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source field 'antibody_name' refers to the name of the antibody, while the target field 'hgnc_symbol' refers to a gene symbol. These are related concepts, as antibodies target specific proteins encoded by genes, but they are not identical. This is a close match."
+  },
+  {
+    "source": "rr_id",
+    "target": "antibody_rrid",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the RRID (a unique identifier for antibodies from the Antibody Registry). Since they share the same meaning, this is an exact match."
+  },
+  {
+    "source": "uniprot_accession_number",
+    "target": "uniprot_accession_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unique identifier for proteins in the UniProt database, so this is an exact match."
+  },
+  {
+    "source": "lot_number",
+    "target": "lot_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the vendor-specific lot number for the antibody. This is an exact match."
+  },
+  {
+    "source": "dilution",
+    "target": "dilution_factor",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source field 'dilution' uses a ratio format (e.g., 1/200), while the target field 'dilution_factor' is a whole number (e.g., 200). They represent the same concept but are expressed differently, so this is a close match."
+  },
+  {
+    "source": "conjugated_cat_number",
+    "target": "conjugated_cat_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the catalog number of conjugated antibodies. This is an exact match."
+  },
+  {
+    "source": "conjugated_tag",
+    "target": "conjugated_tag",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the entity conjugated to the antibody. This is an exact match."
+  }
+]
