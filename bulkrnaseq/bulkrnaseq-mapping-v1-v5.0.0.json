@@ -1,0 +1,218 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not have an equivalent field for specifying the schema version."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not have a free-text description field for the assay."
+  },
+  {
+    "source": "donor_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:narrowMatch",
+    "rationale": "The 'parent_sample_id' field in the target schema refers to the identifier of the sample used to perform the assay. It can include donor information, but it's broader since it includes block, section, or suspension details."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:narrowMatch",
+    "rationale": "The 'parent_sample_id' in the target schema refers to the sample, which can include tissue ID details. However, the target field is broader because it can include multiple sample types."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no equivalent field in the target schema for the start date and time of the assay."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the DOI for protocols.io pages referring to the assay protocol."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not include a field for the name of the person responsible for executing the assay."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not include a field for the email of the person responsible for executing the assay."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not include a field for the principal investigator responsible for the data."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not include a field for the email of the principal investigator responsible for the data."
+  },
+  {
+    "source": "assay_category",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:broadMatch",
+    "rationale": "The 'dataset_type' field in the target schema is broader and references specific dataset types, whereas the 'assay_category' field in the source schema refers to general assay categories."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The 'dataset_type' field in the target schema and the 'assay_type' field in the source schema both refer to the specific assay type (RNAseq). However, the target field may include other dataset types beyond assays."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the class of analytes being measured with the assay, specifically RNA."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the assay targets specific molecules for detection/measurement."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument used in the assay."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the specific model of the acquisition instrument used in the assay."
+  },
+  {
+    "source": "bulk_rna_isolation_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:narrowMatch",
+    "rationale": "The 'preparation_protocol_doi' field in the target schema is broader and includes all preparation protocols, while the source field specifically refers to RNA isolation protocols."
+  },
+  {
+    "source": "bulk_rna_yield_value",
+    "target": "amount_of_input_analyte_value",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The 'amount_of_input_analyte_value' in the target schema refers to the RNA amount input to the assay, which is close in meaning to RNA yield in the source schema."
+  },
+  {
+    "source": "bulk_rna_yield_units_per_tissue_unit",
+    "target": "amount_of_input_analyte_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the units for the RNA yield, specifically ng/mg or similar units."
+  },
+  {
+    "source": "bulk_rna_isolation_quality_metric_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not have an equivalent field for RNA quality metrics like RIN value."
+  },
+  {
+    "source": "rnaseq_assay_input_value",
+    "target": "amount_of_input_analyte_value",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source and target fields both refer to the amount of RNA input to the assay."
+  },
+  {
+    "source": "rnaseq_assay_input_unit",
+    "target": "amount_of_input_analyte_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the units for the amount of RNA input to the assay."
+  },
+  {
+    "source": "rnaseq_assay_method",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no equivalent field in the target schema for specifying the RNA sequencing assay method."
+  },
+  {
+    "source": "library_construction_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not have an equivalent field for library construction protocols."
+  },
+  {
+    "source": "library_layout",
+    "target": "library_layout",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the sequencing library layout (single-end or paired-end)."
+  },
+  {
+    "source": "library_adapter_sequence",
+    "target": "library_adapter_sequence",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the adapter sequence used for sequencing."
+  },
+  {
+    "source": "library_pcr_cycles_for_sample_index",
+    "target": "number_of_pcr_cycles_for_indexing",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the number of PCR cycles performed for library indexing."
+  },
+  {
+    "source": "library_final_yield_value",
+    "target": "library_output_amount_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the total amount of library output after PCR amplification."
+  },
+  {
+    "source": "library_final_yield_unit",
+    "target": "library_output_amount_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the units for the final library yield."
+  },
+  {
+    "source": "library_average_fragment_size",
+    "target": "library_average_fragment_size",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the average fragment size of the sequencing library."
+  },
+  {
+    "source": "sequencing_reagent_kit",
+    "target": "sequencing_reagent_kit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the reagent kit used for sequencing."
+  },
+  {
+    "source": "sequencing_read_format",
+    "target": "sequencing_read_format",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the format of sequencing reads (number of cycles in each round)."
+  },
+  {
+    "source": "sequencing_read_percent_q30",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no equivalent field in the target schema for specifying the Q30 percentage for sequencing reads."
+  },
+  {
+    "source": "sequencing_phix_percent",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The target schema does not have a field for specifying the percentage of PhiX used in sequencing."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify the relative path to the file containing contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify the relative path to the data file or directory."
+  }
+]
