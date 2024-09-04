@@ -1,9 +1,9 @@
 [
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields refer to the unique identifier for the sample. However, 'parent_sample_id' can refer to other types of samples, not only tissue. Hence, a close match is more appropriate."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "tissue_id",
@@ -49,9 +49,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:broadMatch",
-    "rationale": "'assay_category' refers to a general category of the assay, whereas 'dataset_type' refers to a more specific type of dataset. The target schema is more specific, so this is a broad match."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",
@@ -127,9 +127,9 @@
   },
   {
     "source": "overall_protocols_io_doi",
-    "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'overall_protocols_io_doi' refers to the overall protocol, whereas 'preparation_protocol_doi' refers to the preparation protocol for the sample. While related, they are not exactly the same."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "contributors_path",

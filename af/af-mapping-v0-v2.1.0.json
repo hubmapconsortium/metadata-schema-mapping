@@ -1,9 +1,9 @@
 [
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The 'donor_id' in the source schema refers to the display ID of the donor, while 'parent_sample_id' in the target schema refers to a parent sample ID. These concepts are similar but not identical, as 'parent_sample_id' could also refer to other sample types like suspension or sections."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "tissue_id",
@@ -49,9 +49,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'assay_category' defines the general category of an assay, while 'dataset_type' in the target schema refers to the specific type of dataset. While related, 'dataset_type' is more specific, leading to a close match."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",
@@ -127,9 +127,9 @@
   },
   {
     "source": "overall_protocols_io_doi",
-    "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'overall_protocols_io_doi' refers to the overall protocol, while 'preparation_protocol_doi' in the target schema refers to the preparation protocol. These fields are related but not identical."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "contributors_path",
