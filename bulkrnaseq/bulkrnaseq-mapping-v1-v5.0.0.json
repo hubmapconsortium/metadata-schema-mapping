@@ -13,9 +13,9 @@
   },
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:narrowMatch",
-    "rationale": "The 'parent_sample_id' field in the target schema refers to the identifier of the sample used to perform the assay. It can include donor information, but it's broader since it includes block, section, or suspension details."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "tissue_id",
@@ -61,9 +61,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:broadMatch",
-    "rationale": "The 'dataset_type' field in the target schema is broader and references specific dataset types, whereas the 'assay_category' field in the source schema refers to general assay categories."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",
@@ -103,15 +103,15 @@
   },
   {
     "source": "bulk_rna_yield_value",
-    "target": "amount_of_input_analyte_value",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The 'amount_of_input_analyte_value' in the target schema refers to the RNA amount input to the assay, which is close in meaning to RNA yield in the source schema."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "bulk_rna_yield_units_per_tissue_unit",
-    "target": "amount_of_input_analyte_unit",
-    "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields describe the units for the RNA yield, specifically ng/mg or similar units."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "bulk_rna_isolation_quality_metric_value",

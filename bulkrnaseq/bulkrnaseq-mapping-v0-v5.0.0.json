@@ -1,9 +1,9 @@
 [
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields refer to unique sample identifiers. 'donor_id' refers to a donor, while 'parent_sample_id' refers to the sample used for the assay. They represent slightly different entities."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "tissue_id",
@@ -49,9 +49,9 @@
   },
   {
     "source": "assay_category",
-    "target": "dataset_type",
-    "matchingPredicate": "skos:broadMatch",
-    "rationale": "'assay_category' categorizes the assay by its scientific technique, while 'dataset_type' refers to the specific type of dataset being produced. The source is broader."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "assay_type",
@@ -121,15 +121,15 @@
   },
   {
     "source": "rnaseq_assay_method",
-    "target": "library_preparation_kit",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'rnaseq_assay_method' refers to the RNA sequencing kit, while 'library_preparation_kit' refers to the kit used for library preparation. These are closely related but not exactly the same."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "library_construction_protocols_io_doi",
-    "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'library_construction_protocols_io_doi' refers to the library construction protocol, while 'preparation_protocol_doi' refers to the broader assay preparation protocol, which may include library construction."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": null
   },
   {
     "source": "library_layout",
