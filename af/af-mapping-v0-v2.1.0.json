@@ -1,0 +1,146 @@
+[
+  {
+    "source": "donor_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The 'donor_id' in the source schema refers to the display ID of the donor, while 'parent_sample_id' in the target schema refers to a parent sample ID. These concepts are similar but not identical, as 'parent_sample_id' could also refer to other sample types like suspension or sections."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both 'tissue_id' and 'parent_sample_id' relate to sample identification in the assay context. However, 'tissue_id' is specific to tissue, while 'parent_sample_id' can cover various types of samples, so a close match is appropriate."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field in the target schema directly corresponds to the assay execution date and time."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'protocols_io_doi' in the source schema and 'preparation_protocol_doi' in the target schema both refer to the DOI for protocols used in the assay. These fields are functionally identical."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The source schema includes 'operator', which refers to the individual responsible for the assay, but no corresponding field exists in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The 'operator_email' field has no direct equivalent in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "'pi' refers to the principal investigator, but no matching field is available in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "'pi_email' has no corresponding field in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'assay_category' defines the general category of an assay, while 'dataset_type' in the target schema refers to the specific type of dataset. While related, 'dataset_type' is more specific, leading to a close match."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'assay_type' and 'dataset_type' are both specifying the exact type of assay being performed. They map exactly."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields are defined as 'analyte_class' in the source and target schemas, referring to the target molecules being measured in the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both the source and target fields describe whether the assay targets specific molecules, making this an exact match."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument used in the assay, so they are an exact match."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the specific model of the acquisition instrument, so this is an exact match."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the pixel width ('resolution_x_value') exists in the target schema."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for the pixel width unit ('resolution_x_unit') is available in the target schema."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the pixel height ('resolution_y_value') is present in the target schema."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for the pixel height unit ('resolution_y_unit') is available in the target schema."
+  },
+  {
+    "source": "resolution_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "'resolution_z_value' (z-pitch resolution) is not present in the target schema."
+  },
+  {
+    "source": "resolution_z_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for 'resolution_z_unit' exists in the target schema."
+  },
+  {
+    "source": "number_of_channels",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "'number_of_channels' (the number of channels capturing emission) has no direct equivalent in the target schema."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'overall_protocols_io_doi' refers to the overall protocol, while 'preparation_protocol_doi' in the target schema refers to the preparation protocol. These fields are related but not identical."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path to the file with ORCID IDs for contributors, making this an exact match."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the relative path to the dataset files, making this an exact match."
+  }
+]
