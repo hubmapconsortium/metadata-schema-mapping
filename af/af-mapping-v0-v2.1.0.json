@@ -3,144 +3,144 @@
     "source": "donor_id",
     "target": null,
     "matchingPredicate": null,
-    "rationale": null
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "tissue_id",
     "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both 'tissue_id' and 'parent_sample_id' relate to sample identification in the assay context. However, 'tissue_id' is specific to tissue, while 'parent_sample_id' can cover various types of samples, so a close match is appropriate."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unique identifier of the sample used in the assay."
   },
   {
     "source": "execution_datetime",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No matching field in the target schema directly corresponds to the assay execution date and time."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "'protocols_io_doi' in the source schema and 'preparation_protocol_doi' in the target schema both refer to the DOI for protocols used in the assay. These fields are functionally identical."
+    "rationale": "Both fields refer to the DOI of the protocols.io page for the assay protocol."
   },
   {
     "source": "operator",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "The source schema includes 'operator', which refers to the individual responsible for the assay, but no corresponding field exists in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "operator_email",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "The 'operator_email' field has no direct equivalent in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "pi",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "'pi' refers to the principal investigator, but no matching field is available in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "pi_email",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "'pi_email' has no corresponding field in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "assay_category",
     "target": null,
     "matchingPredicate": null,
-    "rationale": null
+    "rationale": "The source field refers to assay category, while no corresponding target field was found."
   },
   {
     "source": "assay_type",
     "target": "dataset_type",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "'assay_type' and 'dataset_type' are both specifying the exact type of assay being performed. They map exactly."
+    "rationale": "Both fields refer to the type of assay being executed."
   },
   {
     "source": "analyte_class",
     "target": "analyte_class",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields are defined as 'analyte_class' in the source and target schemas, referring to the target molecules being measured in the assay."
+    "rationale": "Both fields refer to the target molecules being measured in the assay."
   },
   {
     "source": "is_targeted",
     "target": "is_targeted",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both the source and target fields describe whether the assay targets specific molecules, making this an exact match."
+    "rationale": "Both fields specify whether the assay targets specific molecules."
   },
   {
     "source": "acquisition_instrument_vendor",
     "target": "acquisition_instrument_vendor",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields refer to the vendor of the acquisition instrument used in the assay, so they are an exact match."
+    "rationale": "Both fields describe the vendor of the acquisition instrument."
   },
   {
     "source": "acquisition_instrument_model",
     "target": "acquisition_instrument_model",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields refer to the specific model of the acquisition instrument, so this is an exact match."
+    "rationale": "Both fields describe the model of the acquisition instrument."
   },
   {
     "source": "resolution_x_value",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field for the pixel width ('resolution_x_value') exists in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "resolution_x_unit",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No matching field for the pixel width unit ('resolution_x_unit') is available in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "resolution_y_value",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field for the pixel height ('resolution_y_value') is present in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "resolution_y_unit",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No matching field for the pixel height unit ('resolution_y_unit') is available in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "resolution_z_value",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "'resolution_z_value' (z-pitch resolution) is not present in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "resolution_z_unit",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field for 'resolution_z_unit' exists in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "number_of_channels",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "'number_of_channels' (the number of channels capturing emission) has no direct equivalent in the target schema."
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "overall_protocols_io_doi",
     "target": null,
     "matchingPredicate": null,
-    "rationale": null
+    "rationale": "No matching field found in the target schema."
   },
   {
     "source": "contributors_path",
     "target": "contributors_path",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields refer to the path to the file with ORCID IDs for contributors, making this an exact match."
+    "rationale": "Both fields refer to the path containing contributor information."
   },
   {
     "source": "data_path",
     "target": "data_path",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields describe the relative path to the dataset files, making this an exact match."
+    "rationale": "Both fields describe the path to the dataset's data."
   }
 ]
