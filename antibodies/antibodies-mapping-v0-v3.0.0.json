@@ -7,9 +7,9 @@
   },
   {
     "source": "antibody_name",
-    "target": "hgnc_symbol",
-    "matchingPredicate": "skos:broadMatch",
-    "rationale": "The source field 'antibody_name' refers to the name of the antibody targeting a specific molecule, while the target field 'hgnc_symbol' refers to the gene symbol. The source field covers a broader concept by referring to the antibody rather than just the gene symbol."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no corresponding field in the target schema for the 'antibody_name' field from the source schema."
   },
   {
     "source": "rr_id",

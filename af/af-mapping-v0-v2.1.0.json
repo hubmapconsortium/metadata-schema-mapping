@@ -20,7 +20,7 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
+    "matchingPredicate": "skos:closeMatch",
     "rationale": "Both fields refer to the DOI of the protocols.io page for the assay protocol."
   },
   {

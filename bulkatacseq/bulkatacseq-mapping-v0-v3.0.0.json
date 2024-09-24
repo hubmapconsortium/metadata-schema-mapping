@@ -8,8 +8,8 @@
   {
     "source": "tissue_id",
     "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'tissue_id' in the source schema represents the ID of the assayed tissue, while 'parent_sample_id' in the target schema refers to the HuBMAP/SenNet ID of the sample used for the assay. While the contexts are similar, the field descriptions indicate potential differences in application scope, making this a close match."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'tissue_id' in the source schema directly correlates to the 'parent_sample_id' in the target schema, both representing the unique identifier of the sample."
   },
   {
     "source": "execution_datetime",
@@ -20,7 +20,7 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
+    "matchingPredicate": "skos:closeMatch",
     "rationale": "Both fields represent the DOI of a protocol from protocols.io. The description and usage align closely, indicating an exact match."
   },
   {
@@ -56,8 +56,8 @@
   {
     "source": "assay_type",
     "target": "dataset_type",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'assay_type' in the source schema refers to the specific type of assay, while 'dataset_type' in the target schema refers to the specific type of dataset being produced. This is a close match, though not entirely exact."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The source field 'assay_type' is directly comparable to the 'dataset_type' in the target schema, representing the specific assay executed."
   },
   {
     "source": "analyte_class",

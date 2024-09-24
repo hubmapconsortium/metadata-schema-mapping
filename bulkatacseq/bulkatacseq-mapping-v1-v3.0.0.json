@@ -32,8 +32,8 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields represent the DOI for the protocols.io page related to the assay or preparation."
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields represent the DOI of a protocol from protocols.io. The description and usage align closely, indicating an exact match."
   },
   {
     "source": "operator",

@@ -3,7 +3,7 @@
     "source": "version",
     "target": null,
     "matchingPredicate": null,
-    "rationale": null
+    "rationale": "There is no corresponding field in the target schema for the 'version' field from the source schema."
   },
   {
     "source": "channel_id",
@@ -13,9 +13,9 @@
   },
   {
     "source": "antibody_name",
-    "target": "hgnc_symbol",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The source field 'antibody_name' refers to the name of the antibody, while the target field 'hgnc_symbol' refers to a gene symbol. These are related concepts, as antibodies target specific proteins encoded by genes, but they are not identical. This is a close match."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no corresponding field in the target schema for the 'antibody_name' field from the source schema."
   },
   {
     "source": "rr_id",

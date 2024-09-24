@@ -20,8 +20,8 @@
   {
     "source": "tissue_id",
     "target": "parent_sample_id",
-    "matchingPredicate": "skos:narrowMatch",
-    "rationale": "The 'parent_sample_id' in the target schema refers to the sample, which can include tissue ID details. However, the target field is broader because it can include multiple sample types."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'tissue_id' in the source schema directly correlates to the 'parent_sample_id' in the target schema, both representing the unique identifier of the sample."
   },
   {
     "source": "execution_datetime",
@@ -32,7 +32,7 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
+    "matchingPredicate": "skos:closeMatch",
     "rationale": "Both fields represent the DOI for protocols.io pages referring to the assay protocol."
   },
   {
@@ -68,8 +68,8 @@
   {
     "source": "assay_type",
     "target": "dataset_type",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "The 'dataset_type' field in the target schema and the 'assay_type' field in the source schema both refer to the specific assay type (RNAseq). However, the target field may include other dataset types beyond assays."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'assay_type' and 'dataset_type' both represent the specific type of assay being conducted, making this an exact match."
   },
   {
     "source": "analyte_class",
@@ -98,8 +98,8 @@
   {
     "source": "bulk_rna_isolation_protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:narrowMatch",
-    "rationale": "The 'preparation_protocol_doi' field in the target schema is broader and includes all preparation protocols, while the source field specifically refers to RNA isolation protocols."
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'bulk_rna_isolation_protocols_io_doi' specifically refers to RNA isolation protocols, while 'preparation_protocol_doi' refers to the assay preparation protocol, which may include RNA isolation."
   },
   {
     "source": "bulk_rna_yield_value",

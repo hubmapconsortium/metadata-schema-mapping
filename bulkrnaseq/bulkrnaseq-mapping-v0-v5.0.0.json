@@ -8,8 +8,8 @@
   {
     "source": "tissue_id",
     "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "'tissue_id' refers to the display ID of the assayed tissue, whereas 'parent_sample_id' refers to the sample used for the assay. They are related but represent different levels of specificity."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "'tissue_id' in the source schema directly correlates to the 'parent_sample_id' in the target schema, both representing the unique identifier of the sample."
   },
   {
     "source": "execution_datetime",
@@ -20,7 +20,7 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
+    "matchingPredicate": "skos:closeMatch",
     "rationale": "Both fields represent the DOI for the protocols used in the assay, with identical meanings."
   },
   {

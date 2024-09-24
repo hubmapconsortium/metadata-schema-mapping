@@ -8,8 +8,8 @@
   {
     "source": "tissue_id",
     "target": "parent_sample_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields deal with sample identification, but 'tissue_id' specifically refers to tissue, while 'parent_sample_id' covers other types of samples (block, suspension, etc.)."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unique identifier of the sample used in the assay."
   },
   {
     "source": "execution_datetime",
@@ -20,7 +20,7 @@
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
-    "matchingPredicate": "skos:exactMatch",
+    "matchingPredicate": "skos:closeMatch",
     "rationale": "Both fields refer to the DOI for protocols used in the assay. These fields are functionally identical."
   },
   {
