@@ -1,0 +1,128 @@
+[
+  {
+    "source": "donor_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:broadMatch",
+    "rationale": "The target field is broader as it can include both donor and sample identifiers."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields identify the tissue/sample, but 'parent_sample_id' is slightly broader."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema for execution date/time."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to protocol DOIs, but the source is broader."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema for operator."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema for operator email."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for the principal investigator."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for the PI's email."
+  },
+  {
+    "source": "assay_category",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:broadMatch",
+    "rationale": "The source field describes a broader category of assays, while the target focuses on dataset type."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the type of assay and are an exact match."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields match exactly in their purpose and values."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same concept with similar options."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields capture the same information."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields capture the same information."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema."
+  },
+  {
+    "source": "antibodies_path",
+    "target": "antibodies_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields serve the same purpose of providing the path to the antibodies file."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields serve the same purpose of providing the path to contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields describe paths related to data storage, though the source includes files while the target focuses on directories."
+  }
+]
