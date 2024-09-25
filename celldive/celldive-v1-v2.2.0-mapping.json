@@ -1,176 +1,176 @@
 [
   {
     "source": "version",
-    "target": "metadata_schema_id",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields indicate the version of the schema used for validation, but in the target schema, it is represented by a specific identifier format."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "description",
-    "target": "description",
-    "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields represent a free-text description of the assay, and the descriptions are identical."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:narrowMatch",
-    "rationale": "The source field represents the ID of the donor, while the target field is broader, representing the sample (which can come from multiple donors or tissues)."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match found in the target schema. 'donor_id' refers to the donor, not the sample."
   },
   {
     "source": "tissue_id",
-    "target": null,
-    "matchingPredicate": null,
-    "rationale": "No direct equivalent found in the target schema for this specific tissue identifier."
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the identifier of the sample or tissue being analyzed."
   },
   {
     "source": "execution_datetime",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No field in the target schema specifically captures the assay start date and time."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "protocols_io_doi",
     "target": "preparation_protocol_doi",
     "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields represent the DOI of protocols used, but the target field is focused on sample preparation rather than the entire assay."
+    "rationale": "Both fields refer to protocol DOIs, but the target schema is specific to preparation."
   },
   {
     "source": "operator",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the operator of the assay."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "operator_email",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the operator's email."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "pi",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the principal investigator's name."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "pi_email",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the principal investigator's email."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "assay_category",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No equivalent found in the target schema for categorizing the assay into predefined types."
+    "rationale": "The source field refers to broader assay categories, not present in the target schema."
   },
   {
     "source": "assay_type",
     "target": "dataset_type",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the specific type of dataset or assay being performed, and the values match."
+    "rationale": "Both fields refer to the type of assay (e.g., Cell DIVE)."
   },
   {
     "source": "analyte_class",
     "target": "analyte_class",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the class of analytes being measured, with identical definitions."
+    "rationale": "Both fields refer to the analytes being measured."
   },
   {
     "source": "is_targeted",
     "target": "is_targeted",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields specify whether a specific molecule is being targeted in the assay, and they have the same intent."
+    "rationale": "Both fields specify whether a specific molecule is targeted for detection."
   },
   {
     "source": "acquisition_instrument_vendor",
     "target": "acquisition_instrument_vendor",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields represent the vendor of the instrument used for acquisition, and the descriptions match exactly."
+    "rationale": "Both fields refer to the vendor of the acquisition instrument."
   },
   {
     "source": "acquisition_instrument_model",
     "target": "acquisition_instrument_model",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields describe the model of the acquisition instrument used, with matching intents."
+    "rationale": "Both fields refer to the specific model of the acquisition instrument."
   },
   {
     "source": "number_of_antibodies",
     "target": "number_of_antibodies",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the number of antibodies used in the assay, with identical meaning."
+    "rationale": "Both fields describe the number of antibodies used in the assay."
   },
   {
     "source": "number_of_channels",
     "target": "number_of_channels",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the number of fluorescent channels imaged during each cycle, with identical intent."
+    "rationale": "Both fields refer to the number of fluorescent channels imaged during each cycle."
   },
   {
     "source": "number_of_cycles",
-    "target": null,
-    "matchingPredicate": null,
-    "rationale": "No direct equivalent field in the target schema for the number of cycles."
+    "target": "number_of_biomarker_imaging_rounds",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields describe repetitive processes in the assay, but with slightly different contexts."
   },
   {
     "source": "number_of_imaging_rounds",
     "target": "number_of_total_imaging_rounds",
-    "matchingPredicate": "skos:closeMatch",
-    "rationale": "Both fields capture the total number of imaging rounds, but the target field also includes autofluorescence/background acquisitions."
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the total number of imaging rounds."
   },
   {
     "source": "resolution_x_value",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema capturing the width of a pixel."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "resolution_x_unit",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the unit of measurement of pixel width."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "resolution_y_value",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema capturing the height of a pixel."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "resolution_y_unit",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No corresponding field in the target schema for the unit of measurement of pixel height."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "processing_protocols_io_doi",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No direct equivalent found in the target schema for the processing protocol DOI."
+    "rationale": "No match found in the target schema."
   },
   {
     "source": "overall_protocols_io_doi",
     "target": null,
     "matchingPredicate": null,
-    "rationale": "No direct equivalent field in the target schema for an overall protocol DOI."
+    "rationale": "The source field refers to the overall process, which does not match the target field for preparation."
   },
   {
     "source": "antibodies_path",
     "target": "antibodies_path",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the file path to the antibodies information, with identical definitions."
+    "rationale": "Both fields refer to the relative path to the antibodies information file."
   },
   {
     "source": "contributors_path",
     "target": "contributors_path",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the file path to the contributors' ORCID IDs, with identical definitions."
+    "rationale": "Both fields refer to the relative path to the contributor information file."
   },
   {
     "source": "data_path",
     "target": "data_path",
     "matchingPredicate": "skos:exactMatch",
-    "rationale": "Both fields capture the file path or directory with the instrument data, with identical definitions."
+    "rationale": "Both fields refer to the path to the instrument data."
   }
 ]

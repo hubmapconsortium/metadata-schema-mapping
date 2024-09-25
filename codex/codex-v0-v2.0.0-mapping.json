@@ -1,9 +1,9 @@
 [
   {
     "source": "donor_id",
-    "target": "parent_sample_id",
-    "matchingPredicate": "skos:broadMatch",
-    "rationale": "The target field is broader as it can include both donor and sample identifiers."
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field in the target schema for donor_id."
   },
   {
     "source": "tissue_id",
