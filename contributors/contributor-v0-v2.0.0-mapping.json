@@ -1,0 +1,38 @@
+[
+  {
+    "source": "affiliation",
+    "target": "affiliation",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields have the same name, description, and constraints, indicating a perfect match."
+  },
+  {
+    "source": "first_name",
+    "target": "first_name",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The name and description are identical, as are the constraints, suggesting they can be used interchangeably."
+  },
+  {
+    "source": "last_name",
+    "target": "last_name",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields have the same name, description, and requirements, ensuring an exact match."
+  },
+  {
+    "source": "middle_name_or_initial",
+    "target": "middle_name_or_initial",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Field name, description, and optionality match exactly, supporting an exact match."
+  },
+  {
+    "source": "name",
+    "target": "display_name",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source 'name' is equivalent to the target 'display_name'. Both fields serve the same purpose but have different labels."
+  },
+  {
+    "source": "orcid_id",
+    "target": "orcid",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Despite a slight difference in the field name ('orcid_id' vs 'orcid'), both have identical descriptions, patterns, and constraints, ensuring they refer to the same concept."
+  }
+]
