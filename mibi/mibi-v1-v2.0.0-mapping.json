@@ -1,0 +1,182 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for schema version in target."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match for general assay description in the target schema."
+  },
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "donor_id refers to the donor of the tissue, while there is no equivalent field in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the HuBMAP identifier for the tissue or sample used in the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the execution date and time in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to protocols.io DOIs, but with a difference in context: one refers to the assay protocol, and the other to sample preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the person responsible for executing the assay."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the operator's email in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the principal investigator in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the principal investigator's email."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "There is no match between assay_category and dataset_type due to differing contexts and specificity."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the type of assay or dataset being produced (MIBI), making them an exact match."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the class of analyte being measured, making them a direct match."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether a specific molecule is targeted by the assay."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the acquisition instrument."
+  },
+  {
+    "source": "number_of_antibodies",
+    "target": "number_of_antibodies",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the number of antibodies used in the assay."
+  },
+  {
+    "source": "number_of_channels",
+    "target": "number_of_channels",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the number of channels imaged during the assay."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the X resolution value."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the Y resolution value."
+  },
+  {
+    "source": "roi_description",
+    "target": "roi_description",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the region of interest (ROI) captured in the image."
+  },
+  {
+    "source": "roi_id",
+    "target": "roi_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the identifier for the region of interest (ROI) on the slide."
+  },
+  {
+    "source": "acquisition_id",
+    "target": "acquisition_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the directory containing the ROI images for a slide."
+  },
+  {
+    "source": "area_normalized_ion_dose_value",
+    "target": "area_normalized_ion_dose_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the number of ions delivered to the sample per unit area."
+  },
+  {
+    "source": "data_precision_bytes",
+    "target": "data_precision_bytes",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the numerical data precision in bytes."
+  },
+  {
+    "source": "pixel_dwell_time_value",
+    "target": "pixel_dwell_time_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the time the primary ion beam stays on each pixel."
+  },
+  {
+    "source": "pixel_dwell_time_unit",
+    "target": "pixel_dwell_time_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of measurement for pixel dwell time."
+  },
+  {
+    "source": "antibodies_path",
+    "target": "antibodies_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the relative path to the file containing antibody information."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path to the file containing contributor ORCID IDs."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path to the file or directory containing instrument data."
+  }
+]
