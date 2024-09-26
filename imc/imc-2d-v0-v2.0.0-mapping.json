@@ -1,0 +1,242 @@
+[
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the ID of the sample used in the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the DOI of protocols related to the assay or sample preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the specific type of assay or dataset being executed or produced."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the class of analytes targeted by the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe whether a specific molecule is targeted."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the model of the acquisition instrument."
+  },
+  {
+    "source": "preparation_instrument_vendor",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "preparation_instrument_model",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "section_prep_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both refer to a DOI for protocols.io related to sample preparation."
+  },
+  {
+    "source": "reagent_prep_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "number_of_channels",
+    "target": "number_of_channels",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the number of channels measured in the assay."
+  },
+  {
+    "source": "ablation_distance_between_shots_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "ablation_distance_between_shots_x_units",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "ablation_distance_between_shots_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "ablation_distance_between_shots_y_units",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "ablation_frequency_value",
+    "target": "ablation_frequency_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the frequency of laser ablation in Hz."
+  },
+  {
+    "source": "ablation_frequency_unit",
+    "target": "ablation_frequency_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the units for the laser ablation frequency."
+  },
+  {
+    "source": "roi_description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "roi_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "acquisition_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "dual_count_start",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "end_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "max_x_width_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "max_x_width_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "max_y_height_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "max_y_height_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "segment_data_format",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "signal_type",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "start_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "data_precision_bytes",
+    "target": "data_precision_bytes",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the precision of data in bytes."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the path to the file with contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the path to the dataset's data."
+  }
+]
