@@ -1,0 +1,248 @@
+[
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unique identifier of the sample used in the assay and are an exact match."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields reference a DOI for a protocol, but one focuses on preparation, making this a close match."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the specific type of dataset or assay being executed and are an exact match."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the analytes being measured, matching perfectly in context and meaning."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the assay targets specific molecules, with identical meaning."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument, identical in meaning."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the acquisition instrument, matching exactly."
+  },
+  {
+    "source": "ms_source",
+    "target": "ms_ionization_technique",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the ionization technique or source used in mass spectrometry, and are an exact match."
+  },
+  {
+    "source": "polarity",
+    "target": "mass_analysis_polarity",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the polarity (positive or negative ion modes) of the mass analysis."
+  },
+  {
+    "source": "mz_range_low_value",
+    "target": "mass_to_charge_range_low_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the low value of the mass-to-charge ratio range."
+  },
+  {
+    "source": "mz_range_high_value",
+    "target": "mass_to_charge_range_high_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the high value of the mass-to-charge ratio range."
+  },
+  {
+    "source": "data_collection_mode",
+    "target": "data_collection_mode",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the mode of data collection in mass spectrometry."
+  },
+  {
+    "source": "ms_scan_mode",
+    "target": "ms_scan_mode",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the scan mode of mass spectrometry, matching perfectly in meaning."
+  },
+  {
+    "source": "labeling",
+    "target": "label_name",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to sample labeling in mass spectrometry, though one specifies 'name' explicitly."
+  },
+  {
+    "source": "section_prep_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to a preparation protocol, but one specifies section prep explicitly."
+  },
+  {
+    "source": "lc_instrument_vendor",
+    "target": "lc_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the LC instrument."
+  },
+  {
+    "source": "lc_instrument_model",
+    "target": "lc_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the LC instrument."
+  },
+  {
+    "source": "lc_column_vendor",
+    "target": "lc_column_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the LC column."
+  },
+  {
+    "source": "lc_column_model",
+    "target": "lc_column_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the LC column."
+  },
+  {
+    "source": "lc_resin",
+    "target": "lc_resin",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the resin used in LC."
+  },
+  {
+    "source": "lc_length_value",
+    "target": "lc_column_length_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the length of the LC column."
+  },
+  {
+    "source": "lc_length_unit",
+    "target": "lc_column_length_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of length for the LC column."
+  },
+  {
+    "source": "lc_temp_value",
+    "target": "lc_temperature_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the temperature of the LC process."
+  },
+  {
+    "source": "lc_temp_unit",
+    "target": "lc_temperature_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of temperature for the LC process."
+  },
+  {
+    "source": "lc_id_value",
+    "target": "lc_inner_diameter_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the inner diameter of the LC column."
+  },
+  {
+    "source": "lc_id_unit",
+    "target": "lc_inner_diameter_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of the inner diameter for the LC column."
+  },
+  {
+    "source": "lc_flow_rate_value",
+    "target": "lc_flow_rate_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the flow rate in LC."
+  },
+  {
+    "source": "lc_flow_rate_unit",
+    "target": "lc_flow_rate_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit for the flow rate in LC."
+  },
+  {
+    "source": "lc_gradient",
+    "target": "lc_gradient_value",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the gradient in LC, though one specifies 'value' explicitly."
+  },
+  {
+    "source": "processing_search",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "processing_protocols_io_doi",
+    "target": "analysis_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the DOI of the protocol for processing or analysis, though one specifies 'processing'."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path of the file with ORCID IDs for contributors."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path for instrument data."
+  }
+]
