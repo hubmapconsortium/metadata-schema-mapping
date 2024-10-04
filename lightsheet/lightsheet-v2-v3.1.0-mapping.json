@@ -1,0 +1,182 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match for free-text description in the target schema."
+  },
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both 'tissue_id' in the source schema and 'parent_sample_id' in the target schema represent unique IDs of the sample used for the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for the assay execution date and time in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the protocols.io DOI for describing preparation or assay processes, though the target schema focuses on sample procurement and preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for operator details in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for operator email in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for principal investigator in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for principal investigator email in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No clear match for assay categories in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both 'assay_type' and 'dataset_type' refer to the specific type of assay being performed."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the analyte being measured in the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the assay targets specific molecules."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the model of the acquisition instrument."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for resolution x value in the target schema."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for resolution x unit in the target schema."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for resolution y value in the target schema."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for resolution y unit in the target schema."
+  },
+  {
+    "source": "range_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for range z value in the target schema."
+  },
+  {
+    "source": "range_z_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for range z unit in the target schema."
+  },
+  {
+    "source": "step_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for step z value in the target schema."
+  },
+  {
+    "source": "increment_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for increment z value in the target schema."
+  },
+  {
+    "source": "increment_z_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for increment z unit in the target schema."
+  },
+  {
+    "source": "number_of_antibodies",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for number of antibodies in the target schema."
+  },
+  {
+    "source": "number_of_channels",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for number of channels in the target schema."
+  },
+  {
+    "source": "antibodies_path",
+    "target": "antibodies_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the path to the antibody file."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the path to the contributors file."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the path to the dataset directory or file."
+  }
+]
