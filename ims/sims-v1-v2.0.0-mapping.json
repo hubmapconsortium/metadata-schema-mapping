@@ -1,0 +1,194 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for schema version found in the target schema."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for free-text description of the assay found."
+  },
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field found in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both 'tissue_id' in the source schema and 'parent_sample_id' in the target schema represent unique IDs of the sample used for the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for execution date and time found in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the protocols.io DOI for describing preparation or assay processes, though the target schema focuses on sample procurement and preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No field in target schema for the name of the person responsible for the assay."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for operator's email."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for Principal Investigator (PI) found in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for PI's email address."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No clear match for assay categories in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both 'assay_type' and 'dataset_type' refer to the specific type of assay being performed."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both describe the analyte class being measured."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields indicate whether a specific molecule is targeted."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the acquisition instrument."
+  },
+  {
+    "source": "ms_source",
+    "target": "ms_ionization_technique",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'ms_source' refers to the ion source type, while 'ms_ionization_technique' refers to the ionization approach."
+  },
+  {
+    "source": "polarity",
+    "target": "mass_analysis_polarity",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the polarity of the mass analysis."
+  },
+  {
+    "source": "mz_range_low_value",
+    "target": "mass_to_charge_range_low_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the low value of the mass-to-charge range."
+  },
+  {
+    "source": "mz_range_high_value",
+    "target": "mass_to_charge_range_high_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the high value of the mass-to-charge range."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for pixel resolution in X direction found."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching unit for pixel resolution in X direction."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent field for pixel resolution in Y direction found."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching unit for pixel resolution in Y direction."
+  },
+  {
+    "source": "preparation_type",
+    "target": "matrix_deposition_method",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'preparation_type' refers to the method of matrix deposition, similar to 'matrix_deposition_method'."
+  },
+  {
+    "source": "preparation_instrument_vendor",
+    "target": "preparation_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the vendor of the preparation instrument."
+  },
+  {
+    "source": "preparation_instrument_model",
+    "target": "preparation_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the model of the preparation instrument."
+  },
+  {
+    "source": "preparation_maldi_matrix",
+    "target": "preparation_matrix",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the matrix used in preparation for mass spectrometry."
+  },
+  {
+    "source": "section_prep_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the DOI of preparation protocols."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": "analysis_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "'overall_protocols_io_doi' refers to the entire assay protocol, while 'analysis_protocol_doi' is more specific to analysis."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the path for contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path for dataset files."
+  }
+]
