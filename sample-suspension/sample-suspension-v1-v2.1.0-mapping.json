@@ -1,0 +1,104 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for 'version' in the target schema."
+  },
+  {
+    "source": "sample_id",
+    "target": "sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields have identical names and descriptions, representing the unique identifier for the sample."
+  },
+  {
+    "source": "type",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for 'type' in the target schema."
+  },
+  {
+    "source": "source_storage_time_value",
+    "target": "source_storage_duration_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the time duration for how long the source material was stored before sample processing."
+  },
+  {
+    "source": "source_storage_time_unit",
+    "target": "source_storage_duration_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the time unit of storage duration, with identical purposes."
+  },
+  {
+    "source": "preparation_media",
+    "target": "preparation_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the medium used during the sample preparation."
+  },
+  {
+    "source": "preparation_condition",
+    "target": "preparation_condition",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the condition during the preparation, with matching names and descriptions."
+  },
+  {
+    "source": "processing_time_value",
+    "target": "processing_time_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the time taken for processing before preservation."
+  },
+  {
+    "source": "processing_time_unit",
+    "target": "processing_time_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the time unit of processing, with matching names and descriptions."
+  },
+  {
+    "source": "storage_media",
+    "target": "storage_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the medium used to store the sample."
+  },
+  {
+    "source": "storage_method",
+    "target": "storage_method",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the storage method used after sample preparation."
+  },
+  {
+    "source": "quality_criteria",
+    "target": "quality_criteria",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the same quality criteria for the sample, with matching descriptions."
+  },
+  {
+    "source": "suspension_entity",
+    "target": "suspension_entity_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the type of single cell entity derived from the isolation protocol, with matching descriptions."
+  },
+  {
+    "source": "suspension_entity_number",
+    "target": "suspension_entity_count",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the total number of cells or nuclei yielded, with identical descriptions."
+  },
+  {
+    "source": "suspension_enriched",
+    "target": "is_suspension_enriched",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe whether the cell/nuclei population was enriched, with matching names and descriptions."
+  },
+  {
+    "source": "suspension_enriched_target",
+    "target": "suspension_enriched_target",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the target of the enrichment process, with identical descriptions."
+  },
+  {
+    "source": "notes",
+    "target": "notes",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields are used for general notes, with matching names and descriptions."
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for 'version' in the target schema."
+  },
+  {
+    "source": "sample_id",
+    "target": "sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The field names, descriptions, and purpose of both fields are identical, representing the unique identifier for the sample."
+  },
+  {
+    "source": "type",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for 'type' in the target schema."
+  },
+  {
+    "source": "source_storage_time_value",
+    "target": "source_storage_duration_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the storage duration of the source material before the sample was processed."
+  },
+  {
+    "source": "source_storage_time_unit",
+    "target": "source_storage_duration_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the unit of time for storage duration, with matching names and purposes."
+  },
+  {
+    "source": "preparation_media",
+    "target": "preparation_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the medium used during sample preparation."
+  },
+  {
+    "source": "preparation_condition",
+    "target": "preparation_condition",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the condition under which the sample was prepared, with matching names and descriptions."
+  },
+  {
+    "source": "processing_time_value",
+    "target": "processing_time_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the time spent processing the tissue before preservation."
+  },
+  {
+    "source": "processing_time_unit",
+    "target": "processing_time_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the unit of time for processing the sample."
+  },
+  {
+    "source": "storage_media",
+    "target": "storage_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the medium in which the sample was preserved, with identical purposes."
+  },
+  {
+    "source": "storage_method",
+    "target": "storage_method",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the method of sample storage after preparation, with matching names and purposes."
+  },
+  {
+    "source": "quality_criteria",
+    "target": "quality_criteria",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to quality assessments of the sample, with identical names and purposes."
+  },
+  {
+    "source": "histological_report",
+    "target": "histological_report",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe histopathological reporting of key variables in the sample."
+  },
+  {
+    "source": "section_thickness_value",
+    "target": "thickness_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the thickness of the section with matching descriptions."
+  },
+  {
+    "source": "section_thickness_unit",
+    "target": "thickness_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the unit of measurement for section thickness."
+  },
+  {
+    "source": "section_index_number",
+    "target": "section_index_number",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the index number of the section, with identical names and purposes."
+  },
+  {
+    "source": "area_value",
+    "target": "area_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the area of the tissue section, with identical names and purposes."
+  },
+  {
+    "source": "area_unit",
+    "target": "area_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the unit of measurement for the area of the tissue section."
+  },
+  {
+    "source": "notes",
+    "target": "notes",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields are used for miscellaneous notes, with matching names and purposes."
+  }
+]

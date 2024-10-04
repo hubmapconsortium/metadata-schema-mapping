@@ -1,0 +1,122 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "sample_id",
+    "target": "sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The field names and descriptions are identical, both representing the unique identifier for the sample."
+  },
+  {
+    "source": "type",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for 'type' in the target schema."
+  },
+  {
+    "source": "source_storage_time_value",
+    "target": "source_storage_duration_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields capture the same storage time information, with matching descriptions and purposes."
+  },
+  {
+    "source": "source_storage_time_unit",
+    "target": "source_storage_duration_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The unit of time storage duration is clearly the same in both schemas."
+  },
+  {
+    "source": "weight_value",
+    "target": "tissue_weight_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent tissue weight, with identical meanings."
+  },
+  {
+    "source": "weight_unit",
+    "target": "tissue_weight_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of tissue weight."
+  },
+  {
+    "source": "volume_value",
+    "target": "volume_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The volume of a tissue block or sample is described similarly in both schemas."
+  },
+  {
+    "source": "volume_unit",
+    "target": "volume_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the volume unit of measurement."
+  },
+  {
+    "source": "pathology_distance_value",
+    "target": "pathology_distance_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The fields refer to the distance from pathology, with matching names and descriptions."
+  },
+  {
+    "source": "pathology_distance_unit",
+    "target": "pathology_distance_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the unit of distance measurement for pathology."
+  },
+  {
+    "source": "preparation_media",
+    "target": "preparation_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the medium used during sample preparation, with identical purposes."
+  },
+  {
+    "source": "preparation_condition",
+    "target": "preparation_condition",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The conditions under which the preparation occurred are described identically."
+  },
+  {
+    "source": "processing_time_value",
+    "target": "processing_time_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the time taken for processing, with identical names and descriptions."
+  },
+  {
+    "source": "processing_time_unit",
+    "target": "processing_time_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The fields refer to the unit of time for processing, with matching descriptions."
+  },
+  {
+    "source": "storage_media",
+    "target": "storage_medium",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the medium in which the sample was preserved, with identical meanings."
+  },
+  {
+    "source": "storage_method",
+    "target": "storage_method",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the storage method, with identical descriptions and matching names."
+  },
+  {
+    "source": "quality_criteria",
+    "target": "quality_criteria",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "The fields represent the same quality criteria, with identical descriptions."
+  },
+  {
+    "source": "histological_report",
+    "target": "histological_report",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to histopathological reporting with matching names and descriptions."
+  },
+  {
+    "source": "notes",
+    "target": "notes",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields are used for general notes and have identical descriptions."
+  }
+]
