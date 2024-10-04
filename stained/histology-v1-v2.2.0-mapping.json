@@ -1,0 +1,158 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The 'version' field in the PAS schema has no corresponding match in the Histology schema."
+  },
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "The 'donor_id' field in the PAS schema has no corresponding match in the Histology schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the ID of the tissue or sample from which the assay data originates."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the Histology schema for execution date and time."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the DOI for protocols.io, though 'protocols_io_doi' in PAS refers to the protocol for the overall assay, while 'preparation_protocol_doi' in Histology is specific to sample preparation."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the person executing the assay in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the operator's email in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the principal investigator in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the principal investigator's email in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match found for the 'assay_category' field in the Histology schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the specific type of assay or dataset being produced."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the class of analytes measured in the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields specify whether the assay targets specific molecules."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the vendor of the instrument used in the assay."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the specific model of the instrument used in the assay."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for pixel resolution (x)."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for pixel resolution unit (x)."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for pixel resolution (y)."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for pixel resolution unit (y)."
+  },
+  {
+    "source": "resolution_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for resolution in the z-axis."
+  },
+  {
+    "source": "resolution_z_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for resolution unit in the z-axis."
+  },
+  {
+    "source": "stain",
+    "target": "stain_name",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe the chemical stains used on the sample."
+  },
+  {
+    "source": "section_prep_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the DOI for the section preparation protocol."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the Histology schema for the overall protocols DOI."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path of the file containing contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the directory path containing the data."
+  }
+]

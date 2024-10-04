@@ -1,0 +1,152 @@
+[
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent unique IDs associated with the sample used in the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both refer to the DOI for protocols.io, but the source focuses on the assay protocol while the target focuses on the preparation protocol."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the specific type of assay or dataset being produced."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the analyte class being measured by the assay."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields describe whether the assay targets specific molecules."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the model of the acquisition instrument."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "resolution_z_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "resolution_z_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "stain",
+    "target": "stain_name",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the name of the stain used in the histology assay."
+  },
+  {
+    "source": "section_prep_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields store the DOI for protocols.io related to the preparation of tissue sections."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields point to the relative path to a file containing contributor information."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields represent the relative path to the dataset or data file."
+  }
+]
