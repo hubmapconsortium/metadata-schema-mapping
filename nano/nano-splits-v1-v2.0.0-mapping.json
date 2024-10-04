@@ -1,0 +1,170 @@
+[
+  {
+    "source": "version",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "description",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field in the target schema."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the identifier of the sample used in the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the DOI for protocols, specifically preparation protocols for assays."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field found in the target schema."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the specific assay or dataset type, with controlled vocabularies."
+  },
+  {
+    "source": "analyte_class",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "is_targeted",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "ms_source",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "polarity",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "mz_range_low_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "mz_range_high_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "resolution_x_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "resolution_x_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "resolution_y_value",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "resolution_y_unit",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "processing_protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the DOI for preparation protocols and are therefore identical in meaning."
+  },
+  {
+    "source": "overall_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found in the target schema."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path for the contributors file and are identical."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the data path and are identical."
+  }
+]
