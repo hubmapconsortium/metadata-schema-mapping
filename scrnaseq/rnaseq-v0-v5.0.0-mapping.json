@@ -1,0 +1,248 @@
+[
+  {
+    "source": "donor_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found in the target schema for the donor ID."
+  },
+  {
+    "source": "tissue_id",
+    "target": "parent_sample_id",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to a unique identifier for the parent sample used in the assay."
+  },
+  {
+    "source": "execution_datetime",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found for datetime type with format constraint."
+  },
+  {
+    "source": "protocols_io_doi",
+    "target": "preparation_protocol_doi",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the DOI for protocols, but they might involve different levels of detail."
+  },
+  {
+    "source": "operator",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No equivalent operator name found in the target schema."
+  },
+  {
+    "source": "operator_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No operator email found in the target schema."
+  },
+  {
+    "source": "pi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field for principal investigator."
+  },
+  {
+    "source": "pi_email",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding email for principal investigator in the target schema."
+  },
+  {
+    "source": "assay_category",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match for assay category."
+  },
+  {
+    "source": "assay_type",
+    "target": "dataset_type",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the specific type of assay being executed or dataset type being produced."
+  },
+  {
+    "source": "analyte_class",
+    "target": "analyte_class",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the class of analyte being measured."
+  },
+  {
+    "source": "is_targeted",
+    "target": "is_targeted",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to whether specific molecules are targeted for measurement."
+  },
+  {
+    "source": "acquisition_instrument_vendor",
+    "target": "acquisition_instrument_vendor",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the vendor of the acquisition instrument."
+  },
+  {
+    "source": "acquisition_instrument_model",
+    "target": "acquisition_instrument_model",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the model of the acquisition instrument."
+  },
+  {
+    "source": "sc_isolation_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found for single-cell isolation protocol DOI."
+  },
+  {
+    "source": "sc_isolation_entity",
+    "target": "assay_input_entity",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both refer to the biological entity from which the analyte is derived."
+  },
+  {
+    "source": "sc_isolation_tissue_dissociation",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found for tissue dissociation method."
+  },
+  {
+    "source": "sc_isolation_enrichment",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found for enrichment method."
+  },
+  {
+    "source": "sc_isolation_quality_metric",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match for isolation quality metric."
+  },
+  {
+    "source": "sc_isolation_cell_number",
+    "target": "number_of_input_cells_or_nuclei",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the number of cells or nuclei input to the assay."
+  },
+  {
+    "source": "rnaseq_assay_input",
+    "target": "amount_of_input_analyte_value",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "Both fields refer to the input quantity, though one is about cell count, the other analyte quantity."
+  },
+  {
+    "source": "rnaseq_assay_method",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match found for the RNA sequencing method."
+  },
+  {
+    "source": "library_construction_protocols_io_doi",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No corresponding field for the library construction protocol DOI."
+  },
+  {
+    "source": "library_layout",
+    "target": "library_layout",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the library layout (single-end/paired-end)."
+  },
+  {
+    "source": "library_adapter_sequence",
+    "target": "library_adapter_sequence",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the adapter sequence used for the library."
+  },
+  {
+    "source": "library_id",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No direct match for library ID found."
+  },
+  {
+    "source": "is_technical_replicate",
+    "target": "is_technical_replicate",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to whether the sequencing was performed in technical replicate."
+  },
+  {
+    "source": "cell_barcode_read",
+    "target": "barcode_read",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the read file containing the cell barcode."
+  },
+  {
+    "source": "cell_barcode_offset",
+    "target": "barcode_offset",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the position of the barcode in the read."
+  },
+  {
+    "source": "cell_barcode_size",
+    "target": "barcode_size",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the size of the cell barcode in base pairs."
+  },
+  {
+    "source": "library_pcr_cycles",
+    "target": "number_of_iterations_of_cdna_amplification",
+    "matchingPredicate": "skos:closeMatch",
+    "rationale": "The source refers to PCR cycles for amplification, while the target refers to iterations of cDNA amplification."
+  },
+  {
+    "source": "library_pcr_cycles_for_sample_index",
+    "target": "number_of_pcr_cycles_for_indexing",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the number of PCR cycles performed for indexing."
+  },
+  {
+    "source": "library_final_yield_value",
+    "target": "library_output_amount_value",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the final yield of the library post-PCR."
+  },
+  {
+    "source": "library_final_yield_unit",
+    "target": "library_output_amount_unit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the units of the final library yield."
+  },
+  {
+    "source": "library_average_fragment_size",
+    "target": "library_average_fragment_size",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the average fragment size of the sequencing library."
+  },
+  {
+    "source": "sequencing_reagent_kit",
+    "target": "sequencing_reagent_kit",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the reagent kit used for sequencing."
+  },
+  {
+    "source": "sequencing_read_format",
+    "target": "sequencing_read_format",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both refer to the number of sequencing cycles in each round of sequencing."
+  },
+  {
+    "source": "sequencing_read_percent_q30",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No matching field found for the percentage of Q30 reads."
+  },
+  {
+    "source": "sequencing_phix_percent",
+    "target": null,
+    "matchingPredicate": null,
+    "rationale": "No match found for percentage of PhiX reads."
+  },
+  {
+    "source": "contributors_path",
+    "target": "contributors_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path for the file with ORCID IDs of contributors."
+  },
+  {
+    "source": "data_path",
+    "target": "data_path",
+    "matchingPredicate": "skos:exactMatch",
+    "rationale": "Both fields refer to the path to the raw data file or directory."
+  }
+]
