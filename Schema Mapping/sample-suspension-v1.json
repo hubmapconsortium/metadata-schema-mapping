@@ -1,0 +1,19 @@
+{
+  "version": null,
+  "sample_id": "sample_id",
+  "type": null,
+  "source_storage_time_value": "source_storage_duration_value",
+  "source_storage_time_unit": "source_storage_duration_unit",
+  "preparation_media": "preparation_medium",
+  "preparation_condition": "preparation_condition",
+  "processing_time_value": "processing_time_value",
+  "processing_time_unit": "processing_time_unit",
+  "storage_media": "storage_medium",
+  "storage_method": "storage_method",
+  "quality_criteria": "quality_criteria",
+  "suspension_entity": "suspension_entity_type",
+  "suspension_entity_number": "suspension_entity_count",
+  "suspension_enriched": "is_suspension_enriched",
+  "suspension_enriched_target": "suspension_enriched_target",
+  "notes": "notes"
+}

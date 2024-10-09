@@ -1,0 +1,8 @@
+{
+  "affiliation": "affiliation",
+  "first_name": "first_name",
+  "last_name": "last_name",
+  "middle_name_or_initial": "middle_name_or_initial",
+  "name": "display_name",
+  "orcid_id": "orcid"
+}

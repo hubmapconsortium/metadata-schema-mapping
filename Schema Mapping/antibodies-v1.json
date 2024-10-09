@@ -1,0 +1,11 @@
+{
+  "version": null,
+  "channel_id": "channel_id",
+  "antibody_name": null,
+  "rr_id": "antibody_rrid",
+  "uniprot_accession_number": "uniprot_accession_number",
+  "lot_number": "lot_number",
+  "dilution": "dilution_factor",
+  "conjugated_cat_number": "conjugated_cat_number",
+  "conjugated_tag": "conjugated_tag"
+}

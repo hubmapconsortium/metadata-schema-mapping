@@ -1,0 +1,21 @@
+{
+  "version": null,
+  "sample_id": "sample_id",
+  "type": null,
+  "source_storage_time_value": "source_storage_duration_value",
+  "source_storage_time_unit": "source_storage_duration_unit",
+  "preparation_media": "preparation_medium",
+  "preparation_condition": "preparation_condition",
+  "processing_time_value": "processing_time_value",
+  "processing_time_unit": "processing_time_unit",
+  "storage_media": "storage_medium",
+  "storage_method": "storage_method",
+  "quality_criteria": "quality_criteria",
+  "histological_report": "histological_report",
+  "section_thickness_value": "thickness_value",
+  "section_thickness_unit": "thickness_unit",
+  "section_index_number": "section_index_number",
+  "area_value": "area_value",
+  "area_unit": "area_unit",
+  "notes": "notes"
+}
