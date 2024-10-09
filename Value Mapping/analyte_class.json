@@ -1,0 +1,11 @@
+{
+  "protein": "Protein",
+  "DNA": "DNA",
+  "endogenous fluorophores": "Endogenous fluorophores",
+  "lipids and metabolites": ["Lipid", "Metabolite"],
+  "lipids": "Lipid",
+  "polysaccharides": "Polysaccharide",
+  "metabolites": "Metabolite",
+  "peptides": "Peptide",
+  "RNA": "RNA"
+}
