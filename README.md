@@ -8,7 +8,7 @@ This repository contains a collection of JSON files representing mappings betwee
 - *Value Mappings*: These files map old permissible values from the legacy schema to new permissible values in the updated schema. This guarantees that any data values constrained by the old schema can be matched to appropriate values in the new schema.
 
 ## Generation
-The mappings provided here were generated with the assistance of Large Language Model (LLM) tools to enhance the accuracy and efficiency of finding possible matches. These tools helped ensure the mappings reflect a close alignment between the old and new schemas that reduced manual work and improving overall consistency. However, a manual human inspection is still needed to ensure the correctness.
+The mappings provided here were generated with the assistance of Large Language Model (LLM) tools to enhance the  efficiency of finding possible matches. These tools helped ensure the mappings reflect a close alignment between the old and new schemas that reduced manual work and improving overall consistency. However, a manual human inspection is still needed to ensure the correctness.
 
 ## Usage
 In each JSON file:
