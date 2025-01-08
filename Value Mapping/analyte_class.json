@@ -1,11 +1,18 @@
 {
   "protein": "Protein",
   "DNA": "DNA",
-  "endogenous fluorophores": "Endogenous fluorophores",
-  "lipids and metabolites": ["Lipid", "Metabolite"],
+  "Endogenous fluorophores": "Endogenous fluorophore",
+  "endogenous fluorophores": "Endogenous fluorophore",
+  "lipids and metabolites": "Lipid + metabolite",
   "lipids": "Lipid",
   "polysaccharides": "Polysaccharide",
   "metabolites": "Metabolite",
   "peptides": "Peptide",
-  "RNA": "RNA"
+  "RNA": "RNA",
+  "Nucleic acid and protein": "Nucleic acid + protein",
+  "nucleic acid and protein": "Nucleic acid + protein",
+  "Chromatin": "Chromatin",
+  "DNA + RNA": "DNA + RNA",
+  "Lipid": "Lipid",
+  "Protein": "Protein"
 }
