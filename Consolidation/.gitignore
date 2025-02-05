@@ -1,0 +1,10 @@
+# JetBrains products, including PyCharm
+.idea/
+# MacOs files
+.DS_Store
+
+# log files in any path
+**/*.log
+
+# Jupyter
+.ipynb_checkpoints

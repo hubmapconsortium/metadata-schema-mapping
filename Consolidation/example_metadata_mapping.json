@@ -1,0 +1,152 @@
+{"assay":{
+  "name":"ims-desi",
+  "versions":[
+    "ims-desi-v0",
+    "ims-desi-v1",
+    "ims-desi-v2"
+  ]
+},
+  "fields":[
+    {
+      "use_case": {
+        "case": "1",
+        "description": "field with same name in all versions"
+      },
+      "name": "acquisition_instrument_vendor",
+      "versions":
+        {
+          "ims-desi-v0" : "acquisition_instrument_vendor",
+          "ims-desi-v1": "acquisition_instrument_vendor",
+          "ims-desi-v2": "acquisition_instrument_vendor"
+        },
+      "values": {
+        "comment": "Key value corresponds to latest version in which the value appears. Value is list of all synonyms (mappings) for key value, including the key value. Value may be deprecated in final version. Only populated for categorical fields",
+        "Thermo Fisher Scientific":
+        [
+          "Thermo",
+          "Thermo Fisher",
+          "Thermo Fisher Scientific"
+        ],
+        "Leica Biosystems": 
+        [
+          "Leica Biosystems"
+        ],
+        "Waters Corp.":
+        [
+          "Waters Corp. (THIS IS AN EXAMPLE OF A VALUE THAT IS NOT IN THE FINAL VERSION.)"
+        ]
+      }
+    },
+    {
+      "use_case": {
+        "case": "2a",
+        "description": "field in all versions, but with name change between versions - earlier name"
+      },
+      "name": "ms_source",
+      "versions": {
+        "ims-desi-v0": "ms_source",
+        "ims-desi-v1": "ms_source",
+        "ims_desi-v2": "ms_ionization_technique"
+      },
+      "values":{
+        "nanoDESI": [
+          "nanoDESI"
+        ],
+        "MALDI":[
+          "MALDI"
+        ],
+        "ESI": [
+          "ESI"
+        ],
+        "nESI": [
+          "ESI"
+        ],
+        "DESI": [
+          "DESI"
+        ],
+        "NanoSpray": [
+          "NanoSpray (THIS WAS DEPRECATED IN THE FINAL VERSION)" 
+        ]
+      }
+    },
+    {
+      "use_case": {
+        "case": "2b",
+        "description": "field in all versions, but with name change between versions - later name"
+      },
+      "name": "ms_ionization_technique",
+      "versions": {
+        "ims-desi-v0": "ms_source",
+        "ims-desi-v1": "ms_source",
+        "ims_desi-v2": "ms_ionization_technique"
+      },
+      "values":{
+        "nanoDESI": [
+          "nanoDESI"
+        ],
+        "MALDI":[
+          "MALDI"
+        ],
+        "ESI": [
+          "ESI"
+        ],
+        "nESI": [
+          "ESI"
+        ],
+        "DESI": [
+          "DESI"
+        ],
+        "NanoSpray": [
+          "NanoSpray (THIS WAS DEPRECATED IN THE FINAL VERSION)"
+        ]
+      }
+    },
+    {
+      "use_case": {
+        "case": "3",
+        "description": "field in version 0 only"
+      },
+      "name": "synthetic_field",
+      "versions": {
+        "ims-desi-v0": "synthetic_field",
+        "ims-desi-v1": null,
+        "ims-desi-v2": null
+      },
+      "values": {
+        "value1": [
+          "value1"
+        ]
+      }
+    },
+    {
+      "use_case": {
+        "case": "4",
+        "description": "field in intermediate version, but not in final"
+      },
+      "name": "version",
+      "versions": {
+        "ims-desi-v0": null,
+        "ims-desi-v1": "version",
+        "ims-desi-v2": null
+      },
+      "values": {
+        "comment": "values object would be empty for fields that are not categorical"
+      }
+    },
+    {
+      "use_case": {
+        "case": "5",
+        "description": "field in final version only"
+      },
+      "name": "mass_resolving_power",
+      "versions": {
+        "ims_desi-v0": null,
+        "ims_desi_v1": null,
+        "ims_desi_v2": "mass_resolving_power"
+      },
+      "values": {
+        "comment": "values object would be empty for fields that are not categorical"
+      }
+    }
+  ]
+}
