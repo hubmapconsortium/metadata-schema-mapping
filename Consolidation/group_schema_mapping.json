@@ -1,0 +1,49 @@
+{
+  "comments": [
+    "Manual map of newer 'soft assay' dataset_types to legacy metadata schemas represented in the Schema Mapping folder of the metadata-schema-mapping repository.",
+    "February 2025",
+    "scatacseq misspelled in repo files",
+    "Legacy schemas that were not mapped: antibodies; contributors; sample-section; sample-block; sample-suspension"
+  ],
+  "Auto-fluorescence": [
+    "af"
+  ],
+  "ATACSeq": [
+    "bulkatacseq",
+    "scatactseq"
+  ],
+  "Cell DIVE": [
+    "celldive"
+  ],
+  "CODEX": [
+    "codex"
+  ],
+  "2D Imaging Mass Cytometry": [
+    "imc"
+  ],
+  "DESI": [
+    "ims-desi"
+  ],
+  "MALDI": [
+    "ims-maldi"
+  ],
+  "SIMS": [
+    "ims-sims"
+  ],
+  "LC-MS": [
+    "lcms"
+  ],
+  "Light Sheet": [
+    "lightsheet"
+  ],
+  "MIBI": [
+    "mibi"
+  ],
+  "RNAseq": [
+    "bulkrnaseq",
+    "scrnaseq"
+  ],
+  "Histology": [
+    "stained"
+  ]
+}
