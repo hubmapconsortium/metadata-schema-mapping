@@ -2,9 +2,9 @@
 ## Consolidation script
 # Objectives
 ## User Stories
-1. For a given type of metadata schema, I want to know:
-   - all versions of the schema 
-   - all fields organized by schema version 
+1. For a given metadata schema, I want to know:
+   - all prior versions of the schema 
+   - fields organized by schema version 
    - the evolution of a field through the schema versions, including 
       - in what schema version the field first appeared 
       - how the field name changed 
@@ -26,9 +26,7 @@ This repo describes mappings between versions of metadata schema for fields and 
 ## Challenges
 
 1. There is a schema field mapping file for each version of a schema. Each file shows mappings between a version and the current version, but not between versions.
-2. Some fields were deprecated, so they are not in the final version. To show information on all fields, it is necessary to build a list of unique values across all versions of a schema—essentially, to flatten the field to version relationship.
-3. If a field name changed, it is necessary to allow for searching on either name.
-4. The value mapping files for each field are flatter than the field mapping file. If a field value has been deprecated, the field value's file shows a mapping of null.
+2. If a field name changed, it is necessary to allow for searching on either name.
 
 # Solution
 
@@ -43,7 +41,7 @@ The consolidated view would:
 
 # Example consolidated view as JSON
 See example_metadata_mapping.json in this folder.
-(The **use_case** object and the **comment** key is for purposes of documentation of the example.)
+(The **use_case** object is for purposes of documentation of the example.)
 
 The JSON structure accounts for the following known use cases:
 
@@ -53,6 +51,3 @@ The JSON structure accounts for the following known use cases:
    - A field was deprecated between the initial version and the next version. 
    - A field was introduced in an intermediate version, but deprecated before the final version. 
    - A new field was created in the final version.
-
-The JSON structure also accounts for all the possible values of a field. 
-For field values, the schema version is irrelevant: e.g., we don't need to know when the acquisition vendor name changed from "Thermo Fisher" to "Thermo Fisher Scientific"—just that both are synonyms for "Thermo Fisher Scientific".

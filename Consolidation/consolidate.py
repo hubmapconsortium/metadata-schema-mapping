@@ -29,26 +29,28 @@ def getargs() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Create consolidated view showing evolution of '
                                                  'legacy metadata schema.',
                                      formatter_class=RawTextArgumentDefaultsHelpFormatter)
-    parser.add_argument('dataset_type', help='dataset_type to which one or more legacy metadata schema belong')
+    parser.add_argument('group', help='group to which one or more legacy metadata schema belong--'
+                                      'e.g., dataset_type')
     argsret = parser.parse_args()
 
     return argsret
 
 
-def getschemadir() -> str:
+def getpath(dirname: str) -> str:
     """
-    Returns the name of the directory that contains schema files.
+    Returns the full path of the specified directory.
+    :param dirname: name of directory.
     """
-    # Get absolute path to schema directory.
+    # Get absolute path to specified directory.
     fpath = os.path.dirname(os.getcwd())
-    fpath = os.path.join(fpath, 'Schema Mapping')
+    fpath = os.path.join(fpath, dirname)
     return fpath
 
 
-def getgroupedschemas(group: str) -> list[str]:
+def getgroupedschemas(groupname: str) -> list[str]:
     """
     Obtains a list of the legacy schemas associated with a group.
-    :param group: name of the group
+    :param groupname: name of the group
 
     Assumption: a file named group_schema_mapping.json exists in the script folder.
     The format of the file is:
@@ -61,7 +63,7 @@ def getgroupedschemas(group: str) -> list[str]:
     try:
         with open(fgroup) as f:
             groups = json.load(f)
-            if group in groups.keys():
+            if groupname in groups.keys():
                 listret = groups.get(group)
         return listret
 
@@ -70,11 +72,11 @@ def getgroupedschemas(group: str) -> list[str]:
         exit(1)
 
 
-def getschemafilenames(group: str) -> list[str]:
+def getschemafilenames(groupname: str) -> list[str]:
 
     """
     Builds a list of file names of versions of the specified metadata schema.
-    :param group: name of a term used to gropu schema--i.e., the dataset_type.
+    :param groupname: name of a term used to gropu schema--i.e., the dataset_type.
     :return: list
 
     Assumptions:
@@ -83,12 +85,12 @@ def getschemafilenames(group: str) -> list[str]:
     """
 
     # Get the subset of legacy schemas that associate with the specified group.
-    groupedschemas = getgroupedschemas(group=group)
+    groupedschemas = getgroupedschemas(groupname=groupname)
 
     listret = []
 
     # Get the complete list of files in the schema mapping directory.
-    allschemas = os.listdir(getschemadir())
+    allschemas = os.listdir(getpath(dirname='Schema Mapping'))
 
     # Build list of tuples of information on files that correspond to the grouped legacy schemas.
     # The tuple will include:
@@ -132,7 +134,7 @@ def getschemajsons(listfiles: list) -> list[dict]:
 
     listret = []
     for schfile in listfiles:
-        fin = os.path.join(getschemadir(), schfile)
+        fin = os.path.join(getpath(dirname='Schema Mapping'), schfile)
         with open(fin) as f:
             listret.append({'file': schfile.split('.json')[0],
                             'content': json.load(f)})
@@ -141,18 +143,32 @@ def getschemajsons(listfiles: list) -> list[dict]:
 
 def buildvaluesobject(field: str) -> dict:
     """
-    Build a 'values' object, containing the superset of all values from prior versions of schemas that are possible
-    for a field in the latest schema.
+    Build a 'values' object, containing information on the superset of fields in all versions of the schema.
 
-    Format of return dictionary:
+    The format of the return matches that of files in the Value Mapping folder:
     {
-        <name of value in latest schema>: <list of synonymous values from prior versions>
+        <name of value in a prior version>: <name(s) of values in the final version>
     }
 
-    :param field:
-    :return:
+    A list for final version names corresponds to an ambiguous mapping that will require
+    :param field: name of a field
     """
-    return {}
+
+    # Look for the value mapping file for the field. Only fields with categorical values will have value mapping fields.
+    # Read the value mapping field.
+
+    groupedvalues = {}
+    valfile = f'{field}.json'
+    fval = os.path.join(getpath(dirname='Value Mapping'), valfile)
+    try:
+        with open(fval) as f:
+            maps = json.load(f)
+            return maps
+
+    except FileNotFoundError:
+        # Field is not categorical
+        return groupedvalues
+
 
 def buildfieldsobject(listversions: list) -> list:
     """
@@ -161,8 +177,8 @@ def buildfieldsobject(listversions: list) -> list:
                          function
     :return: list of dicts in format
     {
-        'name': <name of field>,
-        'prior_versions': <list of versions in which the field appears>,
+        'name': <name of field in a previous version of the schema>,
+        'final_version': <name of the field in the final version of the schema>,
         'values': <values dict for field>
     }
     """
@@ -175,10 +191,10 @@ def buildfieldsobject(listversions: list) -> list:
     for schemafile in listversions:
         content = schemafile.get('content')
         # Get all fields.
-        # Each non-null value in a versioned schema JSON corresponds to a field in the final version of the schema.
+        # Each key in a versioned schema JSON corresponds to a field in a previous version of the schema.
         for key in content:
             if content[key] is not None:
-                listfields.append(content[key])
+                listfields.append(key)
 
     # Drop duplicates, using a set.
     setfields = set(listfields)
@@ -187,37 +203,38 @@ def buildfieldsobject(listversions: list) -> list:
 
     # For each field in the final field superset, loop through each versioned schema file to document the
     # evolution of the field.
-    # 1. If the field corresponds to a value in the previous version of a schema file, the field is in both the
-    #    final schema and the previous schema.
-    #    The key for the matched value corresponds to what the field was named in the previous schema.
-    # 2. If the field does not correspond to a value in the previous version of a schema file, the field was
-    #    introduced after the previous schema.
+    # 1. If the field corresponds to a key in the previous version of a schema file, the field was in the
+    #    previous schema.
+    #    The value for the matched key corresponds to what the field was named in the previous schema.
+    # 2. If the field does not correspond to a key in the previous version of a schema file, the field was not
+    #    in the previous schema.
 
     for field in supersetfields:
         dictfield = {'name': field}
-        setprior = set()
+        setmatches = set()
+        listmatches = []
         for schemafile in listversions:
             content = schemafile.get('content')
-            if field in content.values():
-                previousfield = list(content.keys())[list(content.values()).index(field)]
-                print(previousfield)
-            else:
-                previousfield = ''
-            # Build unique set of field names from previous versions.
-            setprior.add(previousfield)
-            # Convert set to list with unpacking operator.
-        dictfield['prior_versions'] = [*setprior]
-        dictfield['values'] = buildvaluesobject(field)
+            if field in content.keys():
+                # The field was in the previous schema. Check for a corresponding field in the final schema.
+                setmatches.add(content[field])
+            # Assumption: a field in a prior version of a schema will match, at most, one field in the final schema.
+            # i.e., field a in version 1 and a in version 2 will both match to field b in final.
+            # Convert set to list and take the first element.
+            listmatches = [*setmatches]
+        dictfield['final_version'] = listmatches[0]
+        dictfield['mapped_values'] = buildvaluesobject(field)
         listret.append(dictfield)
 
     return listret
 
-def buildconsolidatedview(name: str, listversions: list) -> dict:
+
+def buildconsolidatedview(groupname: str, listversions: list) -> dict:
     """
     Builds the "consolidated view"--a dictionary that describes the superset of fields and categorical values that are
     in all versions of a metadata schema.
 
-    :param name: name of the group of legacy schema files--e.g., a dataset_type
+    :param groupname: name of the group of legacy schema files--e.g., a dataset_type
     :param listversions: A list of schema mapping file information, formatted as described in the getschemajsons
                          function
     :return: a dict that consolidates and organizes schema information across versions
@@ -226,26 +243,37 @@ def buildconsolidatedview(name: str, listversions: list) -> dict:
     for schfile in listversions:
         listv.append(schfile.get('file').split('.json')[0])
     dictret = {
-        'schema': name,
-        'legacy_schemas': listv,
+        'schema': groupname,
+        'prior_versions': listv,
         'fields': buildfieldsobject(listversions=listversions)
     }
 
     return dictret
+
+
+def writeviewtojsonfile(dictview: dict):
+    """
+    Writes a consolidated view dictionary to a json file.
+    :param dictview: consolidated view dictionary.
+    """
+    fout = dictview.get('schema') + '.json'
+    with open(fout, 'w') as file:
+        json.dump(dictview, file, indent=4)
+
 # ----------------------------------
 # MAIN
 
 
 # Obtain schema for which to create consolidated view.
 args = getargs()
-dataset_type = args.dataset_type
-print(f'Creating consolidated view for dataset_type {dataset_type}.')
+group = args.group
+print(f'Creating consolidated view for group {group}.')
 
 # Get list of versioned schema files, ordered by version.
-listschemafiles = getschemafilenames(group=dataset_type)
+listschemafiles = getschemafilenames(groupname=group)
 
-# Read schema files.
+# Read and consolidate schema files.
 listschemaversions = getschemajsons(listfiles=listschemafiles)
+consolidatedview = buildconsolidatedview(groupname=group, listversions=listschemaversions)
 
-consolidatedview = buildconsolidatedview(name=dataset_type, listversions=listschemaversions)
-print(consolidatedview)
+writeviewtojsonfile(dictview=consolidatedview)
