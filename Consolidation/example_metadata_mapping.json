@@ -1,47 +1,16 @@
-{"schema": "DESI",
-  "prior_versions":[
-    "ims-desi-v0",
-    "ims-desi-v1",
-    "ims-desi-v2"
-  ],
-  "fields":[
-    {
-      "use_case": {
-        "case": "1",
-        "description": "field with same name in both prior version and final version"
-      },
-      "name": "acquisition_instrument_vendor",
-      "final_version": "acquisition_instrument_vendor",
-      "mapped_values": {
-        "Hyperion Imaging System": "Hyperion Imaging System",
-        "HiSeq 4000": "HiSeq 4000",
-        "NovaSeq": ["NovaSeq X", "NovaSeq 6000", "NovaSeq X Plus"],
-        "NovaSeq 6000": "NovaSeq 6000",
-        "Novaseq6000": "NovaSeq 6000",
-        "Novaseq6013": "NovaSeq 6000"
-      }
+{
+  "DESI": {
+    "versions":[
+      "ims-desi-v0",
+      "ims-desi-v1",
+      "ims-desi-v2"
+    ],
+    "field_mappings": {
+      "acquisition_instrument_vendor": "acquisition_instrument_vendor",
+      "ms_source": "ms_ionization_technique",
+      "version": "no match"
     },
-    {
-      "use_case": {
-        "case": "2",
-        "description": "field changed name between prior version and final version"
-      },
-      "name": "ms_source",
-      "final_version": "ms_ionization_technique",
-      "values":{
-        "comment": "values here"
-      }
-    },
-    {
-      "use_case": {
-        "case": "3",
-        "description": "field in a prior version only"
-      },
-      "name": "synthetic_field",
-      "prior_versions": "no match",
-      "values": {
-        "comment": "values here"
-      }
+    "RNAseq": {
     }
-  ]
+  }
 }

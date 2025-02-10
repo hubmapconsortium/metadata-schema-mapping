@@ -6,44 +6,73 @@
     "Legacy schemas that were not mapped: antibodies; contributors; sample-section; sample-block; sample-suspension"
   ],
   "Auto-fluorescence": [
-    "af"
+    "af-v0.json",
+    "af-v1.json"
   ],
   "ATACSeq": [
-    "bulkatacseq",
-    "scatactseq"
+    "bulkatacseq-v0.json",
+    "bulkatacseq-v1.json",
+    "scatactseq-v0.json",
+    "scatactseq-v1.json"
   ],
   "Cell DIVE": [
-    "celldive"
+    "celldive-v0.json",
+    "celldive-v1.json"
   ],
   "CODEX": [
-    "codex"
+    "codex-v0.json",
+    "codex-v1.json"
   ],
   "2D Imaging Mass Cytometry": [
-    "imc"
+    "imc-v0.json",
+    "imc-v1.json"
   ],
   "DESI": [
-    "ims-desi"
+    "ims-desi-v0.json",
+    "ims-desi-v1.json",
+    "ims-desi-v2.json"
   ],
   "MALDI": [
-    "ims-maldi"
+    "ims-maldi-v0.json",
+    "ims-maldi-v1.json",
+    "ims-maldi-v2.json"
   ],
   "SIMS": [
-    "ims-sims"
+    "ims-sims-v0.json",
+    "ims-sims-v1.json",
+    "ims-sims-v2.json"
   ],
   "LC-MS": [
-    "lcms"
+    "lcms-v0.json",
+    "lcms-v1.json",
+    "lcms-v2.json"
   ],
   "Light Sheet": [
-    "lightsheet"
+    "lightsheet-v0.json",
+    "lightsheet-v1.json",
+    "lightsheet-v2.json"
   ],
   "MIBI": [
-    "mibi"
+    "mibi-v1.json"
+  ],
+  "NanoSplits": [
+    "nano-splits-v0.json",
+    "nano-splits-v1.json"
+  ],
+  "MxIF": [
+    "mxif-v0.json",
+    "mxif-v1.json"
   ],
   "RNAseq": [
-    "bulkrnaseq",
-    "scrnaseq"
+    "bulkrnaseq-v0.json",
+    "bulkrnaseq-v1.json",
+    "scrnaseq-v0.json",
+    "scrnaseq-v1.json",
+    "scrnaseq-v2.json",
+    "scrnaseq-v3.json"
   ],
   "Histology": [
-    "stained"
+    "stained-v0.json",
+    "stained-v1.json"
   ]
 }
