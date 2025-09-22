@@ -1,7 +1,9 @@
 {
-	"TRUE": "Yes",
-	"True": "Yes",
-	"FALSE": "No",
-	"False": "No",
-	"0": "No"
+  "is_technical_replicate": {
+    "TRUE": "Yes",
+    "True": "Yes",
+    "FALSE": "No",
+    "False": "No",
+    "0": "No"
+  }
 }

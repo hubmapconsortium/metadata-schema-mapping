@@ -1,4 +1,5 @@
 {
-	"paired-end": "paired-end",
-	"single": "single-end"
+  "library_layout": {
+    "single": "single-end"
+  }
 }
