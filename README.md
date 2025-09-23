@@ -1,5 +1,7 @@
 # Schema Mapping Resources
 
+**This repository is deprecated, please refer to [this repository](https://github.com/hubmapconsortium/reharmonize-legacy-metadata) for the latest updates**
+
 ## Overview
 This repository contains a collection of JSON files representing mappings between legacy schemas and updated schemas stored as CEDAR templates. The mappings are organized into two main aspects:
 
